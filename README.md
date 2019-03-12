@@ -1,3 +1,3 @@
-# clang-orientation
+# clang-programming
 
-C언어 오리엔테이션
+가천대학교 `컴퓨터 프로그래밍` 교과에서 다루는 `C언어 프로그래밍` 내용입니다.
