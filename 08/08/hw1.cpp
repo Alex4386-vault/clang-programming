@@ -5,7 +5,7 @@ int main() {
 	scanf("%d", &num);
 
 	bool isPrime = true;
-	for (int i = 2; i < num; i++) {
+	for (int i = 2; i <= (num / 2); i++) {
 		if (num % i == 0) {
 			isPrime = false;
 			break;
@@ -13,8 +13,8 @@ int main() {
 	}
 
 	if (isPrime) {
-		printf("소수 입니다.");
+		printf("%d is prime!", num);
 	} else {
-		printf("아니거든.");
+		printf("NOPE.");
 	}
 }
