@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ия 9
+#define Ice 9
 
 int main() {
 	int get = 0;
@@ -9,12 +9,12 @@ int main() {
 	for (int i = 10000; i > 0; i /= 10) {
 		int a = temp / i;
 		temp -= (i * a);
-		if (a == ия) {
+		if (a == Ice) {
 			ice9++;
 		}
 	}
 
-	printf("amount of ияs: %d", ice9);
+	printf("amount of 9s: %d", ice9);
 }
 
 /*
