@@ -8,18 +8,37 @@ int main() {
 	bool isPalin = true;
 	scanf("%d", &palin);
 
-	int temp = palin, digits[5] = { 0, }, j = 0;
+	int temp = palin, a = 0, b = 0, c = 0, d = 0, e = 0, j = 0;
 	for (int i = 10000; i > 0; i /= 10) {
-		digits[j] = temp / i;
-		temp -= (i * digits[j]);
+		int currentNum = temp / i;
+		switch (j) {
+		case 0:
+			a = currentNum;
+			break;
+		case 1:
+			b = currentNum;
+			break;
+		case 2:
+			c = currentNum;
+			break;
+		case 3:
+			d = currentNum;
+			break;
+		case 4:
+			e = currentNum;
+			break;
+		default:
+			printf("ERROR!");
+			return 0;
+		}
+		temp -= (i * currentNum);
 		j++;
 	}
 
-	for (int i = 0; i < 2; i++) {
-		if (digits[i] != digits[4 - i]) {
-			isPalin = false;
-		}
+	if (a != e || b != d) {
+		isPalin = false;
 	}
+
 
 	if (isPalin) {
 		printf("%d is a palindrome", palin);
