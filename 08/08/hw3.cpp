@@ -3,6 +3,7 @@
 // Use this only if you are using MSBUILD and SDL Check is enabled.
 #define scanf scanf_s
 
+// Get it?
 #define Ice 9
 
 int main() {
