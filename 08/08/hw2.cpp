@@ -10,7 +10,10 @@ int main() {
 
 	int temp = palin, a = 0, b = 0, c = 0, d = 0, e = 0, j = 0;
 	for (int i = 10000; i > 0; i /= 10) {
+
+		// We didn't learn array yet.
 		int currentNum = temp / i;
+
 		switch (j) {
 		case 0:
 			a = currentNum;
