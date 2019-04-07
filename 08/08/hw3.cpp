@@ -18,9 +18,8 @@ int main() {
 }
 
 /*
- Spell
- Card:
- Icy Ball
+ Spell Card:
+ Ice Sign "Icicle Fall"
 
     0
    / \
@@ -28,4 +27,4 @@ int main() {
  /\   /\
  \ \ / /
   \ V /
- */
+*/
