@@ -1,4 +1,8 @@
 #include <stdio.h>
+
+// Use this only your solution if you are using MSBUILD and SDL Check is enabled.
+#define scanf scanf_s
+
 #define Ice 9
 
 int main() {

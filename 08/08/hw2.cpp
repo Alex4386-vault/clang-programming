@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+// Use this only your solution if you are using MSBUILD and SDL Check is enabled.
+#define scanf scanf_s
+
 int main() {
 	int palin = 0;
 	bool isPalin = true;
