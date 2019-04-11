@@ -11,14 +11,14 @@
 int main() {
     int num1[15] = {0,}, num2[5] = {0, };
     
-    for (int i = 0; i < 10; i++) {
-        printf("num1 index %d: ", i);
-        scanf("%d", &num1[i]);
-    }
-    
     for (int i = 0; i < 5; i++) {
         printf("num2 index %d: ", i);
         scanf("%d", &num2[i]);
+    }
+    
+    for (int i = 0; i < 10; i++) {
+        printf("num1 index %d: ", i);
+        scanf("%d", &num1[i]);
     }
     
     for (int i = 10; i < 15; i++) {
