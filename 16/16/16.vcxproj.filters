@@ -15,22 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="strInput.c">
+    <ClCompile Include="strcat.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="usingGetsPuts.cpp">
+    <ClCompile Include="toLowerCase.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="scanfStringInput.cpp">
+    <ClCompile Include="strcmp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="printfStringOutput.cpp">
+    <ClCompile Include="strcpyAndstrcat.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="wordCounter.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="strcpy.cpp">
+    <ClCompile Include="limitedstrcpy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
