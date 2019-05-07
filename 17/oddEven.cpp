@@ -6,6 +6,7 @@
 //  Copyright © 2019 Alex4386 (박상희). All rights reserved.
 //
 
+/*
 #include <stdio.h>
 
 void odd_even(int input);
@@ -23,3 +24,4 @@ int main() {
 void odd_even(int input) {
     printf("%d %s\n", input, (input % 2) ? "is odd" : "is even");
 }
+*/
