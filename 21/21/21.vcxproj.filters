@@ -15,31 +15,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sum.cpp">
+    <ClCompile Include="maximum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hw2.cpp">
+    <ClCompile Include="dataStructure.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hw1.cpp">
+    <ClCompile Include="atoiAndatof.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hw3.cpp">
+    <ClCompile Include="tan90Time.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="exchange.cpp">
+    <ClCompile Include="statistics.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hw4.cpp">
+    <ClCompile Include="modoosMarble.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="square.cpp">
+    <ClCompile Include="recursiveFactorial.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hw5.cpp">
+    <ClCompile Include="recursiveFibo.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="hw6.cpp">
+    <ClCompile Include="nonRecursiveFibo.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
