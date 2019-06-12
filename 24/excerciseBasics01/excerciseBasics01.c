@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+
 int main() {
     int *ptr;
     int var = 1000;
