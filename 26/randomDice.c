@@ -10,7 +10,7 @@ void outputStatistics(int *rollResults, int length);
 int main() {
     srand(time(NULL));
 
-    printf("How many times you want to roll?");
+    printf("How many times you want to roll? ");
 
     int rollCount;
     scanf("%d", &rollCount);
