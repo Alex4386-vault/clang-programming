@@ -345,3 +345,7 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+
+## VSCode C language compile outputs
+*.o
+*.dSYM
