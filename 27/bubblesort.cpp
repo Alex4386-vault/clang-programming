@@ -5,18 +5,18 @@
  */
 
 template <class T>
-void swap(T *a, T *b) {
-    T tmp = *a;
-    *a = *b;
-    *b = tmp;
-}
-
-template <class T>
 void bubbleSort(T* array, int length) {
+
+    auto swap = [](T* a, T* b) {
+        T tmp = *a;
+        *a = *b;
+        *b = tmp;
+    };
+
     for (int i = 0; i < length; i++) {
-        for (int j = i; j < length; j++) {
+        for (int j = i + 1; j < length; j++) {
             if (array[i] > array[j]) {
-                swap<T>(&array[i], &array[j]);
+                swap(&array[i], &array[j]);
             }
         }
     }

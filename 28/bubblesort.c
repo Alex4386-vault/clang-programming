@@ -23,7 +23,7 @@ void bubbleSort(int* array, const int length) {
     void swap(int *a, int *b);
 
     for (int i = 0; i < length; i++) {
-        for (int j = i; j < length; j++) {
+        for (int j = i + 1; j < length; j++) {
             if (array[i] > array[j]) {
                 swap(&array[i], &array[j]);
             }
