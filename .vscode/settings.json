@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "time.h": "c",
-        "type_traits": "cpp",
-        "stdio.h": "c"
-    }
-}
