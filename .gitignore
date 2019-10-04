@@ -349,3 +349,5 @@ MigrationBackup/
 ## VSCode C language compile outputs
 *.o
 *.dSYM
+
+.vscode/settings.json
