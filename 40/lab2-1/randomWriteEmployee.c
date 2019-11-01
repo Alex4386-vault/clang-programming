@@ -3,12 +3,19 @@
 #include <string.h>
 #include <time.h>
 
+// struct to save employee salary data.
 struct EmployeeSalary {
+    // name
     char name[20];
+    
+    // department in NULL-terminated string
     char department[11];
+
+    // salary
     int salary[3];
 };
 
+// name array
 char names[10][20] = {
     "CHOI",
     "HWANG",
@@ -22,23 +29,38 @@ char names[10][20] = {
     "CHRIS"
 };
 
+// department array
 char departments[3][11] = {
     "Technical",
     "Management",
     "Production"
 };
 
+/**
+ * construct new EmployeeStruct Struct with random data.
+ * 
+ * @return constructed EmployeeSalary struct.
+ **/
 struct EmployeeSalary employeeSalaryConstructor() {
+    // create struct
     struct EmployeeSalary emp = { "", "", { 1 + (rand() % 20), 1 + (rand() % 20), 1 + (rand() % 20)} };
+    // get random name from name array
     strcpy(emp.name, names[(int)rand() % 10]);
+    // get random department from departments array
     strcpy(emp.department, departments[(int)rand() % 3]);
+    // return struct
     return emp;
 }
 
+// main function
 int main() {
+    // set random seed as current time epoch
     srand(time(NULL));
     
+    // variable for howMany.
     int howMany = 0;
+
+    // ask user howMany 
     printf("How many data should I generate? ");
     scanf("%d", &howMany);
 
