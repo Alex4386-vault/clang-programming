@@ -64,20 +64,30 @@ int main() {
     printf("How many data should I generate? ");
     scanf("%d", &howMany);
 
+    // create file pointer - write
     FILE *salaryRandom = fopen("Salary.txt","w");
+
+    // File I/O Exception Handling
     if (!salaryRandom) {
+        // user-friendly errormsh
         printf("[ERROR] Unable to write the file.\nPlease check write permission or Disk's S.M.A.R.T.\n");
+        // errorcode 1
         return 1;
     }
     
+    // print howmany to file
     fprintf(salaryRandom, "%d\n", howMany);
     
+    // for every employee
     for (int i = 0; i < howMany; i++) {
+        // create new struct using random constructor defined above
         struct EmployeeSalary empl = employeeSalaryConstructor();
 
+        // and write to the file
         fprintf(salaryRandom, "%s %s %d %d %d\n", empl.name, empl.department, empl.salary[0], empl.salary[1], empl.salary[2]);
     }
 
+    // close the file pointer.
     fclose(salaryRandom);
     
     

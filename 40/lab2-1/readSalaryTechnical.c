@@ -84,10 +84,11 @@ int main() {
     // for all employeeList.
     for (int i = 0; i < count; i++, empPtr++) {
 
-        // run sum.
+        // get sum of the salaries
         int sum = 0;
         for (int j = 0; j < 3; j++) {
-            sum = empPtr->salary[j];
+            // add all salaries.
+            sum += empPtr->salary[j];
         }
 
         // write to file.
