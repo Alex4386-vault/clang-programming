@@ -1,0 +1,4 @@
+I love C programming
+I'm studying in Gachon University
+Lecture name is Software Design Patterns
+File I/O is easy!
