@@ -1,0 +1,11 @@
+10
+LEE Management 6 16 20
+OK Production 14 6 14
+KIM Production 19 10 15
+WANG Technical 19 17 9
+HWANG Technical 5 18 16
+LEE Production 8 2 19
+KANG Production 8 17 7
+AHN Management 13 16 16
+PARK Technical 8 3 8
+CHOI Technical 19 7 9
