@@ -107,7 +107,6 @@ int main() {
 
     // variable to save how many lines are in the file.
     int totalLine = howManyLines(in);
-    printf("%d", totalLine);
 
     // infinite loop until break.
     while(1) {

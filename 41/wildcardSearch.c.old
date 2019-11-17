@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_WILDCARD 10
+#define true 1
+#define false 0
+
+char *subString(char *theString, int baseAddr, int maxAddr) {
+  int length = maxAddr - baseAddr;
+
+  char *subStrAddr = (char *)malloc(sizeof(char) * (length + 1));
+
+  for (int i = baseAddr; i < maxAddr && (*theString != NULL); i++)
+	{
+		*subStrAddr = *(theString + i);
+		subStrAddr++;
+	}
+
+	*subStrAddr = NULL;
+
+	return subStrAddr - length;
+}
+
+int rawSearch(char *query, char *searchStr) {
+  for (int i = 0; i < strlen(searchStr); i++) {
+    int j;
+
+    for (j = 0; j < strlen(query) && query[j] != 0 && searchStr[i+j] != 0; j++) {
+      printf("%c %c\n", query[j], searchStr[i+j]);
+      if (query[j] != searchStr[i+j]) {
+        break;
+      }
+    }
+    
+    if (j == strlen(query)) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+
+char searchString(char *query, char *searchStr) {
+
+  int wildcardLocation[MAX_WILDCARD] = { 0, };
+  char *searchQueries[MAX_WILDCARD] = { };
+  
+  // Search for wildcard
+  int j = 0;
+  for (int i = 0; i < strlen(query); i++) {
+    if (query[i] == '*') {
+      wildcardLocation[j] = i;
+      j++;
+    }
+  }
+  
+  if (j == 0) {
+    printf("no wildcard!\n");
+  }
+
+  int currentLocation = 0;
+  
+  if (j == 0) {
+    wildcardLocation[0] = searchStr;
+  
+  } else {
+    for (int i = 0; wildcardLocation[i] != 0; i++) {
+      printf("%s\n", wildcardLocation[i]);
+      searchQueries[i] = subString(query, currentLocation, wildcardLocation[i]);
+      currentLocation = wildcardLocation[i]+1;
+    }
+  }
+
+  char a = 0;
+  for (int i = 0; wildcardLocation[i] != 0; i++) {
+    a = rawSearch(searchQueries[i], searchStr+a);
+    if (a < 0) {
+      return false;
+    }
+  }
+}
+
+int main(int argc, char* argv[]) {
+  if (argc < 3) {
+    printf("%s {searchQuery} {searchString}\n", argv[0]);
+
+  } else {
+    printf("Searching for %s in string %s\n", argv[1], argv[2]);
+    printf("%d\n", searchString(argv[1], argv[2]));
+  }
+  return 0;
+}
+
