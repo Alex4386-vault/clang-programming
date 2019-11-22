@@ -155,11 +155,15 @@ int main() {
     printf("Enter the sampleRate for the vote : ");
     scanf("%d", &sampleRate);
 
+    int totalSamples = 0;
+
     // for every lines,
     for (int i = 1; i <= lineCount && !feof(fp); i++) {
         char regionName[regionsLength] = "";
         int age = 0;
         char candidateName[candidatesLength] = "";
+
+        if (feof(fp)) break;
 
         fscanf(fp, "%s %d %s\n", regionName, &age, candidateName);
 
@@ -170,6 +174,7 @@ int main() {
                 // write for cadidatesVotes.ddxsesesdsdsrasdfytrewaertyuysatytrd
                 if (!strcmp(candidates[j], candidateName)) {
                     candidatesVotes[j]++;
+                    totalSamples++;
                 }
             }
         }
@@ -177,7 +182,7 @@ int main() {
 
     // for all candidates, print vote percents
     for (int i = 0; i < candidatesCount; i++) {
-        printf("%s: %.1lf%%\n", candidates[i], ((double)candidatesVotes[i] / (int)(lineCount / sampleRate)) * 100);
+        printf("%s: %.1lf%%\n", candidates[i], ((double)candidatesVotes[i] / totalSamples) * 100);
     }
 
     // free section.

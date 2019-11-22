@@ -1,0 +1,62 @@
+Age from 10 to 19
+--------------------
+OK 13 Tennis
+OK 11 Baseball
+CHRIS 18 Tennis
+CHOI 11 Badminton
+CHOI 15 Swimming
+AHN 18 Marathon
+CHOI 17 Biking
+AHN 18 Badminton
+OK 11 Marathon
+CHRIS 16 Marathon
+WANG 13 Gaming
+KIM 12 Badminton
+
+Age from 20 to 29
+--------------------
+KANG 27 Baseball
+KIM 26 Soccer
+OK 25 Marathon
+CHRIS 25 Aerobics
+KIM 28 Bowling
+LEE 21 Aerobics
+AHN 25 Tennis
+KIM 20 Badminton
+KANG 20 Marathon
+PARK 23 Bowling
+KANG 27 Tennis
+AHN 22 Biking
+CHRIS 28 Biking
+KIM 20 Bowling
+KIM 22 Aerobics
+AHN 23 Swimming
+LEE 27 Soccer
+
+Age from 30 to 39
+--------------------
+OK 39 Bowling
+KIM 31 Baseball
+CHOI 31 Badminton
+AHN 31 Biking
+KIM 30 Tennis
+WANG 32 Biking
+HWANG 39 Swimming
+KIM 31 Swimming
+WANG 37 Swimming
+OK 37 Badminton
+CHRIS 35 Aerobics
+
+Age from 40 to 49
+--------------------
+CHOI 49 Tennis
+PARK 48 Biking
+WANG 49 Baseball
+LEE 48 Aerobics
+OK 41 Biking
+PARK 46 Aerobics
+KIM 46 Badminton
+CHOI 47 Aerobics
+WANG 40 Baseball
+OK 44 Marathon
+

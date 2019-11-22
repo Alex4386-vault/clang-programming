@@ -40,7 +40,7 @@ int howManyLines(FILE *input) {
 
     // for all characters
     for (char c = 0; !feof(input); c=getc(input)) {
-        // if line return increase 1
+        // if line return increas 1
         if (c == '\n') {
             count++;
         }
@@ -143,7 +143,6 @@ int groupByAge(FILE *input) {
             // if age is current Age, write
             if (age == currentAge) {
                 fprintf(fp, "%s %d %s\n", name, age, hobby);
-                printf("Writing: %d @ %s\n", age, name);
             }
         }
 
@@ -241,7 +240,6 @@ int groupByHobby(FILE *input) {
             // check current hobby at hobbies 
             if (!strcmp(hobby, currentHobby)) {
                 fprintf(fp, "%s %d %s\n", name, age, hobby);
-                printf("Writing: %s @ %s\n", hobby, name);
             }
         }
 
