@@ -161,14 +161,8 @@ int main() {
         // header
         printf("=== STACK ===\n");
 
-        // print stack
-        print();
-        
-        // line return
-        printf("\n");
-
         // command prompt
-        printf("Please Enter Command (1. push, 2. pop, 3. empty, 4. quit) : ");
+        printf("Please Enter Command (1. push, 2. pop, 3. print, 4. quit) : ");
         
         // select the menu
         int menuSelect = 0;
@@ -200,9 +194,8 @@ int main() {
                 }
                 break;
             case 3:
-                // empty the stack
-                empty();
-                printf("Stack Emptied!\n");
+                // print the stack
+                print();
                 break;
             case 4:
                 // terminate program

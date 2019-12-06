@@ -158,14 +158,8 @@ int main() {
         // header
         printf("=== QUEUE ===\n");
 
-        // print queue
-        print();
-        
-        // line return
-        printf("\n");
-
         // command prompt
-        printf("Please Enter Command (1. insert, 2. delete, 3. empty, 4. quit) : ");
+        printf("Please Enter Command (1. insert, 2. delete, 3. print, 4. quit) : ");
         
         // select the menu
         int menuSelect = 0;
@@ -197,9 +191,8 @@ int main() {
                 }
                 break;
             case 3:
-                // empty the queue
-                empty();
-                printf("Queue Emptied!\n");
+                // print the queue
+                print();
                 break;
             case 4:
                 // terminate program
