@@ -16,8 +16,8 @@ int main() {
 
     printf("Circular Buffer: \n");
 
-    for (int i = front; i < rear; i = (i + 1) % SIZE) {
-      printf("%d ", queue[i]);
+    for (int i = front, count = 0; count < 5; i++, count++) {
+      printf("%d ", queue[i % SIZE]);
     }
     printf("\n");
     printf("Front @ %d, Rear @ %d\n", front, rear);
@@ -69,7 +69,7 @@ int main() {
 }
 
 int insert(int a) {
-  if ((rear + 1) % SIZE == front) {
+  if ((rear) % SIZE == front && front != -1) {
     return 0;
   }
   force_insert(a);
@@ -86,7 +86,7 @@ void force_insert(int a) {
 
 int delete() {
   int data = queue[front];
+  queue[front] = 0;
   front = (front + 1) % SIZE;
   return data;
 }
-
